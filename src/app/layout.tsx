@@ -1,4 +1,5 @@
-import { type Metadata } from 'next'
+'use client';
+
 import {
   ClerkProvider,
   SignInButton,
@@ -20,11 +21,6 @@ const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
   subsets: ['latin'],
 })
-
-export const metadata: Metadata = {
-  title: 'Instituto Libertad',
-  description: 'Instituto Libertad',
-}
 
 export default function RootLayout({
   children,
